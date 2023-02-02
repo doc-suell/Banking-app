@@ -268,3 +268,14 @@ labelBalance.addEventListener('click', function () {
 
   console.log(movementUI, movementUI2);
 });
+
+labelBalance.addEventListener('click', function () {
+  const movementUI = Array.from(
+    document.querySelectorAll('.movements__value'),
+    el => Number(el.textContent.replace('€', ''))
+  );
+
+  const movementUI2 = [...document.querySelectorAll('.movements__value')];
+
+  console.log(movementUI, movementUI2);
+});
